@@ -43,7 +43,7 @@
   width: 100%;
 }
 .chip{
-  width: 100%;
+  width: fit-content;
   display: inline-flex;
   flex-direction: row;
   background-color: #e5e5e5;
