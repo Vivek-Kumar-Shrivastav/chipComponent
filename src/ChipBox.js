@@ -57,6 +57,7 @@ const ChipBox = () => {
         {selectedChips.map((item, key) => (
           <Col className="chipCol" key={key} sm={6} md={6} lg={3} xl={3}>
             <div
+              style={{ width: "fit-content" }}
               className={
                 key === selectedChips.length - 1 &&
                 alreadyHighlighted &&
