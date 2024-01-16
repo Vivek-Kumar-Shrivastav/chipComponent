@@ -279,14 +279,32 @@ export const DataProvider = ({ children }) => {
   const [availableItems, setAvailableItems] = useState(
     initialState.availableItems
   );
+  const [availableProducts, setAvailableProducts] = useState(
+    initialState.availableProducts
+  );
+  const [selectedProductFilters, setSelectedProductFilters] = useState([]);
+
+  const [productFilters, setProductFilters] = useState(
+    initialState.productFilters
+  );
 
   return (
     <DataContext.Provider
       value={{
         selectedChips,
         setSelectedChips,
+
         availableItems,
         setAvailableItems,
+
+        availableProducts,
+        setAvailableProducts,
+
+        selectedProductFilters,
+        setSelectedProductFilters,
+
+        productFilters,
+        setProductFilters,
       }}
     >
       {children}
