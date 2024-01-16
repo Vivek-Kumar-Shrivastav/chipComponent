@@ -1,3 +1,42 @@
+.product-card{
+  padding: 10px;
+  margin: 10px;
+}
+.option-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  margin-bottom: 15px;
+}
+
+.option-box:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.option-title {
+  margin: 0;
+  font-size: 14px;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+}
+
+.option-key {
+  font-size: 12px;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+
+.option-key:hover {
+  text-decoration: underline;
+}
+
+
+/* Optional: Add hover effect for better user experience */
+.option-key:hover {
+  text-decoration: underline;
+}
 .zepto-header {
   background-color: rgb(60,0,107); /* Set your desired background color */
   color: #fff; /* Set your desired text color */
@@ -36,17 +75,14 @@
 .chipInputText:focus {
   outline: none;
 }
+#dropdown-basic{
+  width: 100%;
+  word-wrap: break-word;
+}
 .dropdown-item{
   margin: 2px;
 }
-.dropdown {
-  margin: 2px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 40vh;
-  overflow: auto;
-}
+
 .dropDownBox {
   display: flex;
   flex-direction: column;
@@ -122,7 +158,7 @@
 
 /* ############################################################## */
 .box {
-  width: 60%;
+  width: 90%;
   height: fit-content;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
@@ -133,10 +169,14 @@
 .App {
   text-align: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+}
+body {
+  margin: 0;
+  padding: 0;
 }

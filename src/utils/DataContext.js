@@ -58,7 +58,8 @@ const initialState = {
       price: 12.99,
       rating: 4.8,
       reviews: 120,
-      image: "https://example.com/images/colombian_coffee.jpg",
+      image:
+        "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 2,
@@ -76,7 +77,8 @@ const initialState = {
       price: 14.99,
       rating: 4.5,
       reviews: 90,
-      image: "https://example.com/images/espresso_blend.jpg",
+      image:
+        "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 3,
@@ -94,7 +96,8 @@ const initialState = {
       price: 16.99,
       rating: 4.7,
       reviews: 150,
-      image: "https://example.com/images/ethiopian_light_roast.jpg",
+      image:
+        "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 4,
@@ -112,7 +115,8 @@ const initialState = {
       price: 11.99,
       rating: 4.6,
       reviews: 100,
-      image: "https://example.com/images/hazelnut_flavored_coffee.jpg",
+      image:
+        "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 5,
@@ -130,7 +134,8 @@ const initialState = {
       price: 19.99,
       rating: 4.9,
       reviews: 180,
-      image: "https://example.com/images/brazilian_chocolate_coffee.jpg",
+      image:
+        "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 6,
@@ -148,7 +153,8 @@ const initialState = {
       price: 13.99,
       rating: 4.5,
       reviews: 80,
-      image: "https://example.com/images/french_vanilla_decaf_coffee.jpg",
+      image:
+        "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 7,
@@ -166,7 +172,8 @@ const initialState = {
       price: 17.99,
       rating: 4.7,
       reviews: 120,
-      image: "https://example.com/images/sumatra_peaberry_coffee.jpg",
+      image:
+        "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 8,
@@ -184,7 +191,8 @@ const initialState = {
       price: 15.99,
       rating: 4.6,
       reviews: 100,
-      image: "https://example.com/images/mexican_cold_brew_concentrate.jpg",
+      image:
+        "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 9,
@@ -202,7 +210,8 @@ const initialState = {
       price: 22.99,
       rating: 4.9,
       reviews: 200,
-      image: "https://example.com/images/organic_espresso_pods.jpg",
+      image:
+        "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 10,
@@ -220,7 +229,8 @@ const initialState = {
       price: 18.99,
       rating: 4.8,
       reviews: 160,
-      image: "https://example.com/images/hawaiian_kona_blend.jpg",
+      image:
+        "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 11,
@@ -238,7 +248,8 @@ const initialState = {
       price: 24.99,
       rating: 5.0,
       reviews: 220,
-      image: "https://example.com/images/vanilla_hazelnut_cold_brew_kit.jpg",
+      image:
+        "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       id: 12,
@@ -256,19 +267,20 @@ const initialState = {
       price: 14.99,
       rating: 4.9,
       reviews: 190,
-      image: "https://example.com/images/caramel_macchiato_coffee.jpg",
+      image:
+        "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ],
   productFilters: [
-    "Brand",
-    "Roast Level",
-    "Bean Type",
-    "Ground vs. Whole Bean",
-    "Flavor Profile",
-    "Origin",
-    "Organic",
-    "Packaging Type",
-    "Caffeine Content",
+    "brand",
+    "roastLevel",
+    "beanType",
+    "groundType",
+    "flavorProfile",
+    "origin",
+    "organic",
+    "packagingType",
+    "caffeineContent",
   ],
 };
 

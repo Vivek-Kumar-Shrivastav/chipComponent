@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useData } from "./DataContext";
+import { useData } from "../utils/DataContext";
 import { Button, Container, Form } from "react-bootstrap";
 
 const AddEmail = () => {

@@ -1,16 +1,9 @@
 import React from "react";
-import { useData } from "./DataContext";
+import { useData } from "../utils/DataContext";
 
-const Chip = ({ item, allowDelete }) => {
+const Chip = ({ name, item, allowDelete, handleChipDelete }) => {
   const { selectedChips, setSelectedChips, availableItems, setAvailableItems } =
     useData();
-
-  const handleChipDelete = (deletedItem) => {
-    setSelectedChips(
-      selectedChips.filter((chipItem) => chipItem !== deletedItem)
-    );
-    setAvailableItems([...availableItems, deletedItem]);
-  };
 
   return (
     <div className="chip">
@@ -20,7 +13,7 @@ const Chip = ({ item, allowDelete }) => {
         <div
           className="chip-close"
           onClick={() => {
-            handleChipDelete(item);
+            handleChipDelete(name);
           }}
         >
           <svg

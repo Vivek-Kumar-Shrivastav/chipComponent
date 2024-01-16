@@ -1,6 +1,5 @@
-import "./App.css";
-import AddEmail from "./AddEmail";
-import ChipBox from "./ChipBox";
+import AddEmail from "../components/AddEmail";
+import ChipBox from "../components/ChipBox";
 const Mail = () => {
   return (
     <>

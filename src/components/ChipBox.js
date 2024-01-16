@@ -1,16 +1,11 @@
 import React, { useState } from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import Chip from "./Chip";
-import { useData } from "./DataContext";
+import { useData } from "../utils/DataContext";
 
 const ChipBox = () => {
   const { selectedChips, setSelectedChips, availableItems, setAvailableItems } =
     useData();
-
-  const handleChipDelete = (deletedItem) => {
-    setSelectedChips(selectedChips.filter((item) => item !== deletedItem));
-    setAvailableItems([...availableItems, deletedItem]);
-  };
 
   const handleKeyDownPress = (e) => {
     if (
@@ -28,15 +23,14 @@ const ChipBox = () => {
     }
   };
 
+  const [alreadyHighlighted, setAlreadyHighlighted] = useState(0);
+  const [filterTerm, setFilterTerm] = useState("");
+  const [filteredItems, setFilteredItems] = useState(availableItems);
   const handleChipClick = (item) => {
     setSelectedChips([...selectedChips, item]);
     setAvailableItems(availableItems.filter((i) => i !== item));
     setFilterTerm("");
   };
-
-  const [alreadyHighlighted, setAlreadyHighlighted] = useState(0);
-  const [filterTerm, setFilterTerm] = useState("");
-  const [filteredItems, setFilteredItems] = useState(availableItems);
 
   const handleFilterChange = (e) => {
     const searchTerm = e.target.value;
@@ -49,6 +43,13 @@ const ChipBox = () => {
             return item.toLowerCase().includes(searchTerm.toLowerCase());
           });
     setFilteredItems(filtered);
+  };
+
+  const handleChipDelete = (deletedItem) => {
+    setSelectedChips(
+      selectedChips.filter((chipItem) => chipItem !== deletedItem)
+    );
+    setAvailableItems([...availableItems, deletedItem]);
   };
 
   return (
@@ -64,7 +65,13 @@ const ChipBox = () => {
                 "highlightDiv"
               }
             >
-              <Chip item={item} key={key} allowDelete={true} />
+              <Chip
+                item={item}
+                name={item}
+                key={key}
+                allowDelete={true}
+                handleChipDelete={handleChipDelete}
+              />
             </div>
           </Col>
         ))}
@@ -90,7 +97,13 @@ const ChipBox = () => {
                       handleChipClick(item);
                     }}
                   >
-                    <Chip item={item} key={key} allowDelete={false} />
+                    <Chip
+                      name={item}
+                      item={item}
+                      key={key}
+                      allowDelete={false}
+                      handleChipDelete={handleChipDelete}
+                    />
                   </div>
                 ))}
               </div>
