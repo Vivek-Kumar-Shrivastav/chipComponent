@@ -90,7 +90,7 @@ const Product = () => {
   return (
     <div className="box">
       <div className="zepto-header">
-        Zepto{" "}
+        Zepto{"  "}
         <Link to="/mail" style={{ color: "white" }}>
           Link to Initial Assignment
         </Link>
