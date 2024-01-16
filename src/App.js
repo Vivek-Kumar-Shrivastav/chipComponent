@@ -7,7 +7,7 @@ const App = () => {
   return (
     <DataProvider>
       <div>
-        <Mail />
+        {/* <Mail /> */}
         <Product />
       </div>
     </DataProvider>

@@ -1,3 +1,16 @@
+.zepto-header {
+  background-color: rgb(60,0,107); /* Set your desired background color */
+  color: #fff; /* Set your desired text color */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
 .highlightDiv{
   border: 1px solid red;
   border-radius: 16px;
